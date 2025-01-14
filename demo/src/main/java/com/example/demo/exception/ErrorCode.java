@@ -6,7 +6,8 @@ public enum ErrorCode {
     UNDEFINED_EXCEPTION( 400, "Undefined Error"),
     INVALID_KEY(404, "Invalid Key"),
     USER_EXISTED( 400, "User Existed"),
-    USER_NOTEXISTED(404,"User Not Existed"),
+    USER_NOT_EXISTED(404,"User Not Existed"),
+    UNAUTHENTICATED(401,"Unauthenticated"),
 
     USERNAME_INVALID(400, "Username must between 6 to 32 characters"),
     USERNAME_BLANK(400,"User Name may not contain blank"),
