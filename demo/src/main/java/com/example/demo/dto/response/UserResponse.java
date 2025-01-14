@@ -8,6 +8,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -19,8 +20,9 @@ public class UserResponse {
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
     String username;
-    String password;
     String firstname;
     String lastname;
     LocalDate dob;
+    Set<String> roles; // List các phần tử có thể trùng lặp còn Set unique
+
 }
