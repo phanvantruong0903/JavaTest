@@ -35,14 +35,14 @@ public class UserController {
         return userService.getUsers();
     }
 
-    @GetMapping("/{userID}")
-    UserResponse getUser(@PathVariable("userID") String userID){
-        return userService.getUser(userID);
-    }
+//    @GetMapping("/{userID}")
+//    UserResponse getUser(@PathVariable("userID") String userID){
+//        return userService.getUser(userID);
+//    }
 
     @GetMapping("/{myInfo}")
     UserResponse getUser(@PathVariable("userID") String userID){
-        return userService.getMyInfo(userID);
+        return userService.getMyInfo();
     }
 
     @PutMapping("/{userID}")
