@@ -35,13 +35,13 @@ public class UserController {
         return userService.getUsers();
     }
 
-//    @GetMapping("/{userID}")
-//    UserResponse getUser(@PathVariable("userID") String userID){
-//        return userService.getUser(userID);
-//    }
-
-    @GetMapping("/{myInfo}")
+    @GetMapping("/{userID}")
     UserResponse getUser(@PathVariable("userID") String userID){
+        return userService.getUser(userID);
+    }
+
+    @GetMapping("/myInfo")
+    UserResponse getMyInfo(){
         return userService.getMyInfo();
     }
 
